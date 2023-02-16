@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 236, 255);
+  background: linear-gradient(180deg, rgb(0, 236, 255) 0%, rgb(218, 0, 255) 100%);
+}
+
+.container {
+  width: 600px;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .logo {
+  width: 90%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.container .logo img {
+  width: 80%;
+  height: auto;
+}
+.container .form-wrapper {
+  width: 90%;
+  height: 400px;
+}
+.container .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .form-wrapper form input {
+  width: 80%;
+  padding: 15px;
+  margin-top: 25px;
+  border-radius: 25px;
+  border: 8px solid #939393;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 1.5em;
+}
+.container .form-wrapper form input::-moz-placeholder {
+  font-weight: bold;
+  color: white;
+}
+.container .form-wrapper form input::placeholder {
+  font-weight: bold;
+  color: white;
+}
+.container .form-wrapper form .button-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  font-size: 2em;
+}
+.container .form-wrapper form .button-container .back {
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: white;
+}
+.container .form-wrapper form .button-container .action {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  font-weight: 800;
+  background-color: rgba(255, 255, 255, 0);
+  border: 8px solid #939393;
+  color: white;
+}
+
+.no-valid {
+  border-color: red !important;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+.messages {
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    width: 400px;
+  }
+  .container .form-wrapper form input {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 100%;
+    min-width: 350px;
+  }
+  .container .form-wrapper form input {
+    padding: 5px;
+    border: 4px solid #939393;
+  }
+  .container .form-wrapper form input::-moz-placeholder {
+    font-weight: bold;
+    color: white;
+    font-size: 0.8em;
+  }
+  .container .form-wrapper form input::placeholder {
+    font-weight: bold;
+    color: white;
+    font-size: 0.8em;
+  }
+}/*# sourceMappingURL=authorization.css.map */

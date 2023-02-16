@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 236, 255);
+  background: linear-gradient(180deg, rgb(0, 236, 255) 0%, rgb(218, 0, 255) 100%);
+}
+
+#create-schedule-wrapper {
+  background: rgb(0, 236, 255);
+  background: linear-gradient(180deg, rgb(0, 236, 255) 0%, rgb(218, 0, 255) 100%);
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+#create-schedule-wrapper #header {
+  font-size: 4em;
+  color: white;
+  margin-bottom: 25px;
+}
+#create-schedule-wrapper .create-schedule {
+  width: 500px;
+}
+#create-schedule-wrapper .create-schedule form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#create-schedule-wrapper .create-schedule form button {
+  padding: 5px;
+  margin: 5px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.container #up-panel {
+  width: 100%;
+  height: 50px;
+  padding: 25px 0 25px 0;
+  display: none;
+}
+.container #up-panel .menu-button {
+  font-size: 3em;
+  padding: 25px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}
+.container #up-panel button {
+  border: none;
+  background-color: rgba(147, 147, 147, 0);
+}
+.container #left-panel {
+  min-width: 300px;
+  height: 100vh;
+  border-right: 5px solid #bbbbbb;
+}
+.container #left-panel .logo {
+  padding: 50px 0 50px 0;
+  text-align: center;
+}
+.container #left-panel .logo img {
+  width: 80%;
+  height: auto;
+}
+.container #left-panel .button-wrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container #left-panel .button-wrapper button {
+  width: 80%;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 25px;
+  border: 8px solid #939393;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  font-size: 1.5em;
+}
+.container #left-panel .button-wrapper button:hover {
+  cursor: pointer;
+  font-size: 1.6em;
+}
+.container #right-panel {
+  width: 80%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-gap: 2em;
+  overflow: auto;
+}
+.container #right-panel .schedule-wrapper {
+  width: 300px;
+  height: 350px;
+  border-radius: 15px;
+  border: 5px solid #939393;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(255, 188, 0);
+  background: linear-gradient(180deg, rgb(255, 188, 0) 0%, rgb(239, 0, 255) 100%);
+  position: relative;
+}
+.container #right-panel .schedule-wrapper .delete-schedule {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 800;
+  border: none;
+  background-color: rgba(147, 147, 147, 0);
+}
+.container #right-panel .schedule-wrapper .delete-schedule:hover {
+  cursor: pointer;
+}
+.container #right-panel .schedule-wrapper .text {
+  margin-top: 45px;
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 4px solid white;
+}
+.container #right-panel .schedule-wrapper .day {
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 4px solid white;
+}
+.container #right-panel .schedule-wrapper .time {
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 4px solid white;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container #right-panel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .container #right-panel {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 750px) {
+  #create-schedule-wrapper #header {
+    font-size: 3em;
+  }
+  #create-schedule-wrapper .create-schedule {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #create-schedule-wrapper #header {
+    font-size: 2em;
+  }
+  #create-schedule-wrapper .create-schedule {
+    width: 300px;
+  }
+  .container {
+    display: block;
+  }
+  .container #up-panel {
+    display: block;
+  }
+  .container #left-panel {
+    position: absolute;
+    display: none;
+    background: rgb(0, 236, 255);
+    background: linear-gradient(180deg, rgb(0, 236, 255) 0%, rgb(218, 0, 255) 100%);
+  }
+  .container #right-panel {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #create-schedule-wrapper #header {
+    font-size: 2em;
+  }
+  #create-schedule-wrapper .create-schedule {
+    width: 280px;
+  }
+}/*# sourceMappingURL=home.css.map */
